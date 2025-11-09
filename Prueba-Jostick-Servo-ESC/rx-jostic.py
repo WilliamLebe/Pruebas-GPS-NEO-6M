@@ -1,5 +1,9 @@
+# ====== Pico 2 W: ===============================================
+# WILLIAM LEON
+# INGENIERIA EN TELECOMUNICACIONES
 # RECEPTOR
 # RX - NRF24L01 + OLED (128x32) + SERVO (GP0) + ESC (GP1)
+#=================================================================
 from machine import Pin, SPI, I2C, PWM
 import utime
 from ssd1306 import SSD1306_I2C
@@ -214,3 +218,4 @@ while True:
             show(ultimo_l1, ultimo_l2, link_ok=True)
 
     utime.sleep_ms(10)
+
