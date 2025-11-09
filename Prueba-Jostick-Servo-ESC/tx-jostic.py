@@ -1,5 +1,9 @@
+# ====== Pico 2 W: ===============================================
+# WILLIAM LEON
+# INGENIERIA EN TELECOMUNICACIONES
 # TRANSMISOR
 # NRF24L01 + OLED + 2 JOYSTICKS
+=================================================================
 from machine import Pin, SPI, I2C, ADC
 from ssd1306 import SSD1306_I2C
 import utime
@@ -164,3 +168,4 @@ while True:
     # Usa ticks_diff para espera relativa precisa
     while utime.ticks_diff(utime.ticks_ms(), t0) < PERIOD_MS:
         utime.sleep_ms(1)
+
