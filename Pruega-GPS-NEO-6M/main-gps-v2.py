@@ -1,4 +1,6 @@
 # ====== Pico 2 W: GPS (NEO-6M) + TCRT5000 + OLED SSD1306 ======
+# WILLIAM LEON
+# INGENIERIA EN TELECOMUNICACIONES
 # OLED I2C1: GP14 SDA, GP15 SCL
 # GPS UART1: GP4 TX, GP5 RX
 # TCRT: A0 -> GP26 (ADC0). Umbral fijo. Vuelta = secuencia N-B-N-B
@@ -194,3 +196,4 @@ while True:
         ultimo_refresco_ms = ahora
 
     time.sleep_ms(2)
+
