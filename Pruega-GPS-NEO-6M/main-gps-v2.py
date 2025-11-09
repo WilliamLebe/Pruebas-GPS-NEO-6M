@@ -4,6 +4,7 @@
 # OLED I2C1: GP14 SDA, GP15 SCL
 # GPS UART1: GP4 TX, GP5 RX
 # TCRT: A0 -> GP26 (ADC0). Umbral fijo. Vuelta = secuencia N-B-N-B
+#=================================================================
 
 from machine import Pin, UART, I2C, ADC
 import time
@@ -196,4 +197,5 @@ while True:
         ultimo_refresco_ms = ahora
 
     time.sleep_ms(2)
+
 
