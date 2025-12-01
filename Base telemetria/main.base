@@ -1,7 +1,13 @@
 # ==========================
+# WILLIAM LEON - INGENIERIA EN TELECOMUNICACIONES
 # BASE TELEMETRICA – PICO W
 # RX por NRF24 + WiFi + HTTP
 # Dashboard local + envío servidor profesor
+# Enlace:
+#   - Dirección RF: ADDR = b'CARRO'
+#   - Canal: 100  (debe coincidir con el CARRO)
+#   - Potencia: 0 dBm (máxima)
+#
 # ==========================
 from machine import Pin, SPI, I2C, UART
 import network
@@ -797,3 +803,4 @@ while True:
     http_poll()
 
     time.sleep_ms(5)
+
